@@ -2,14 +2,10 @@ source :rubygems
 gem "sinatra", ">=1.0"
 gem "rspec",:platforms => :ruby_19
 gem "rspec", :require => 'spec', :platforms => :ruby_19
-gem "data_mapper"
+gem "mongoid", "2.0.0.beta.17"
+gem "bson_ext", "1.0.4"
+gem 'sinatra-mongoid-config', :git => "git://github.com/flexd/sinatra-mongoid-config.git"
 gem "rack-test"
-gem "dm-core"
-gem "dm-sqlite-adapter"
-gem "dm-timestamps"
-gem "dm-validations"
-gem "dm-aggregates"
-gem "dm-migrations"
 gem "haml"
 gem "tilt"
 gem "fastthread"

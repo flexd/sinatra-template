@@ -1,11 +1,12 @@
-# example model file
-class Profile
-  include DataMapper::Resource
+# example model
 
-  property :id,         Serial
-  property :name,       String  
-  property :created_at, DateTime
-  property :updated_at, DateTime
-
+class Replay
+  include Mongoid::Document
+  field :name
+  field :description
+  
   validates_presence_of :name
+  validates_presence_of :description
 end
+
+
